@@ -13,5 +13,11 @@ object Loop{
   println(a)
   }
 
+  println("Apply yield with filter")
+  var eventList = for{ a <- 1 until 10 if a % 2 == 0 } yield a
+  for (even <- eventList){
+    println(even)
+  }
+
   }
 }
