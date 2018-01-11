@@ -7,5 +7,11 @@ object Loop{
   println("values for b: " + b)
     }
 
+  println("print even numbers using filters ")
+  var numList = List(1,2,3,4,5,6)
+  for (a <- numList if a % 2 == 0 ){
+  println(a)
+  }
+
   }
 }
