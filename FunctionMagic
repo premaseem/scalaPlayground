@@ -3,6 +3,13 @@ object FunctionMagic{
 def main(args: Array[String]) {
      delayed(time());
      println(addInt(1,3))
+     printStrings("prem","meera","sony")
+}
+
+def printStrings(args :String*) = {
+  for ( arg <- args){
+    println(arg)
+  }
 }
 
 def addInt( a:Int, b:Int ) : Int = {
