@@ -1,13 +1,19 @@
 object FunctionMagic{
 
 def main(args: Array[String]) {
-      country()
+     println(doprint())
+     inc(5)
+     country()
      delayed(time());
      println(addInt(1,3))
      printStrings("prem","meera","sony")
      println(factorial(5))
      println(factorialFor(3))
 }
+
+//Scala - Anonymous Functions
+var inc = (x:Int) => x+1
+var doprint = () => { System.getProperty("user.dir") }
 
 // Nested function
 def country() = {
