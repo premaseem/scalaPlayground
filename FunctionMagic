@@ -17,6 +17,14 @@ def factorial(n:Int):Int = {
     }
 }
 
+// Scala - Default Parameter Values for a Function
+def addInt( a:Int = 5, b:Int = 7 ) : Int = {
+   var sum:Int = 0
+   sum = a + b
+
+   return sum
+}
+
 // Factorial using for loop
   def factorialFor(n:Int):Int = {
     var i = 1
