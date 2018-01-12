@@ -11,6 +11,10 @@ def addInt( a:Int, b:Int ) : Int = {
    return sum
 }
 
+def printMe( ) : Unit = {
+   println("Hello, Scala!")
+}
+
 def time() = {
    println("Getting time in nano seconds")
    System.nanoTime
